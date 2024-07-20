@@ -1,0 +1,65 @@
+iframe {
+  /* optionally turn off Create React App 
+     error boundary overlay */
+  display: none;
+}
+
+#app {
+  margin: 2em;
+}
+
+.inventory {
+  width: 320px;
+  border: 1px solid grey;
+  border-radius: 2px;
+}
+.inventory .header {
+  background: #555;
+  font-weight: 600;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+}
+.inventory ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.inventory li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5em;
+  border-bottom: 1px solid #777;
+  padding-left: 1em;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+.inventory li > span {
+  max-width: 200px;
+}
+.inventory .counter-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.inventory .counter-container button {
+  background: white;
+  width: 25px;
+  height: 25px;
+  border: 0;
+  cursor: pointer;
+}
+.inventory .counter-container button:hover {
+  background: #f1f1f1;
+}
+.inventory .counter-container > .counter {
+  text-align: center;
+  padding-right: 0.5em;
+  width: 30px;
+  padding-left: 0.5em;
+}
