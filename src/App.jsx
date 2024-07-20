@@ -18,22 +18,20 @@ window.fetch = async (...args) => ({
   }),
 });
 
-const ErrorFallback = ({ error }) => {
-  return (
-    <div>
-      <p>Something went wrong:</p>
-      <pre data-testid="error-message" style={{ color: 'red' }}>
-        {error.message}
-      </pre>
-    </div>
-  );
-};
+const ErrorFallback = ({ error }) => (
+  <div>
+    <p>Something went wrong:</p>
+    <pre data-testid="error-message" style={{ color: 'red' }}>
+      {error.message}
+    </pre>
+  </div>
+);
+
 
 const App = () => (
   <div id="app">
     <ErrorBoundary FallbackComponent={<ErrorFallback />}>
       <Inventory url="http://www.example.com" />
-      {/* <ErrorFallback error={{ message: 'test' }} /> */}
     </ErrorBoundary>
   </div>
 );
