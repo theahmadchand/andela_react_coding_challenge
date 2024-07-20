@@ -1,3 +1,6 @@
-# andela_react_interview
+# Andela React Coding challenge
 
-[Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/theahmadchand/andela_react_interview)
+### Tasks
+- Fetch data from mocked API request and render Items
+- Implement error handling to render fallback component
+- Only implement your solution in `Inventory.jsx`
